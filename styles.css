@@ -28,9 +28,6 @@ form{
     align-items: center;
 }
 
-.todo-button{
-    
-}
 button{
     background-color: #222222;
     color:#6f37fa;
@@ -46,4 +43,23 @@ button{
 i{
     font-size: 2.5em;
 }
+/*through Js*/
+.todo-list{
+    list-style: none;
+}
 
+.todo{
+    background-color: #333333;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.todo li{
+    flex: 1;
+    margin: 5px 10px;
+}
