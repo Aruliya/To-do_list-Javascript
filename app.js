@@ -23,4 +23,35 @@ function addTodo(event) {
     todoList.appendChild(todoDiv);
     todoDiv.appendChild(newTodo);
 
+    const completedButton = document.createElement("button");
+    completedButton.innerHTML = '<i class="fa fa-2x fa-check"></i>'
+    completedButton.classList.add("complete-button");
+    todoDiv.appendChild(completedButton);
+
+    const trashButton = document.createElement('button');
+    trashButton.innerHTML = '<i class="fa fa-2x fa-trash"></i>'
+    trashButton.classList.add("trash-button");
+    todoDiv.appendChild(trashButton);
+   
+    // Clear Todo Input
+    todoInput.value = ""; 
+
 }
+
+function deleteCheck(event) {
+    const item = event.target;
+    console.log(item);
+    
+    // Delete Todo
+    if (item.classList[0] === "trash-button") {
+        const todo = item.parentElement;
+        todo.remove();
+    }
+
+// Check Mark
+    if(item.classList[0] === "complete-button") {
+        const todo = item.parentElement;
+        todo.classList.toggle("completed");
+    }
+}
+

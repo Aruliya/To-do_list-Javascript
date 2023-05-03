@@ -50,16 +50,40 @@ i{
 
 .todo{
     background-color: #333333;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 350px;
+    width: 340px;
     margin: 10px 0px;
     border-radius: 5px;
+}
+
+
+.complete-button {
+    background-color: #50C878;
+    padding: 4.5px;
+    border: none;
+    color: black;
+    
+}
+
+.trash-button {
+    background-color: red;
+    padding: 4.5px;
+    color: white;
+    border: none;
 }
 
 .todo li{
     flex: 1;
     margin: 5px 10px;
 }
+/*no space between the check button and trash button*/
+.trash-button{
+    margin-left: 0;
+}
+.completed{
+    text-decoration: line-through;
+}
+
