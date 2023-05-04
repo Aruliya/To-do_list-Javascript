@@ -86,7 +86,7 @@ i{
 .completed{
     text-decoration: line-through;
 }
-
+/*so that it works if we click anywhere on the font awesome icon*/
 .fa-trash, 
 .fa-check {
     pointer-events: none;
