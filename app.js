@@ -40,7 +40,7 @@ function addTodo(event) {
 
 function deleteCheck(event) {
     const item = event.target;
-    console.log(item);
+    //console.log(item);
     
     // Delete Todo
     if (item.classList[0] === "trash-button") {
