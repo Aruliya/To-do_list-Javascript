@@ -87,3 +87,8 @@ i{
     text-decoration: line-through;
 }
 
+.fa-trash, 
+.fa-check {
+    pointer-events: none;
+}
+
